@@ -1,0 +1,76 @@
+/* apply color and margin to both headers one and two */
+h1, h2 {
+  color: navy;
+  margin-left: 20px;
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+ background-color: #333;
+ overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+ float: left;
+ display: block;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+ background-color: #ddd;
+ color: black;
+}
+
+
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+ background-color: #4CAF50;
+ color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+ display: none;
+}
+
+a::before {
+content: "CSS: ";
+font-weight: bold;
+}
+
+/* color every list element which is a child of an ordered list red */
+  ol li {
+ color: red;
+}
+
+/* I want to style my biography differently */
+#biography {
+  background-color: yellow;
+}
+
+/* styling for the welcome section of the index.html used 16px for larger screens */
+.welcome{
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+/* styling for the welcome section of the index.html used 20px for screens >= 800pxs*/
+
+@media (min-width: 800px) {
+    .welcome {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+/*Select and style every <p> element where the parent is a <div> element*/
+div > p {
+  background-color: azure;
+}
