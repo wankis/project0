@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* initialize some variables */
+/* nesting*/
+div div div p {
+  color: yellowgreen;
+}
+
+/*  inheritance */
+.consultancyskills {
+  font-family: sans-serif;
+  font-style: 20px;
+}
+
+.consultancyskills {
+  background-color: peachpuff;
+}
+
+/* apply color and margin to both headers one and two */
+h1, h2 {
+  color: navy;
+  margin-left: 20px;
+  text-align: center;
+}
+
+a::before {
+  content: "♎: ";
+  font-weight: bold;
+}
+
+/* color every list element which is a child of an ordered list red */
+ol li {
+  color: azure;
+}
+
+/* I want to style my biography differently */
+#biography {
+  background-color: beige;
+}
+
+/* styling for the welcome section of the index.html used 16px for larger screens */
+.welcome {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+/* styling for the welcome section of the index.html used 20px for screens >= 800pxs*/
+@media (min-width: 800px) {
+  .welcome {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+/* print only paragraph */
+@media print {
+  .screen-only {
+    display: none;
+  }
+}
+/*Select and style every <p> element where the parent is a <div> element*/
+div > p {
+  background-color: beige;
+}
+
+#skills {
+  display: flex;
+  padding: 20px;
+}
+
+#skills div {
+  padding: 10px;
+  border: 15px;
+}
+
+ul#horizontal-list {
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+  border: 20px;
+}
+
+ul#horizontal-list li {
+  display: inline;
+}
+
+ul#horizontal-list li a:active {
+  color: azure;
+}
+
+/* mouse over link */
+li a:hover {
+  color: red;
+  background-color: beige;
+}
+
+li a.active {
+  background-color: beige;
+  color: teal;
+}
+
+/* highlight upon selection */
+p::selection {
+  color: teal;
+  background-color: beige;
+}
+
+/*# sourceMappingURL=myvariables.css.map */
